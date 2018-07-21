@@ -88,6 +88,7 @@ public:
 	afx_msg void OnAAsp();
 	afx_msg void OnAAutohotkey();
 	afx_msg void OnAAutoit();
+    afx_msg void OnBash();
 	afx_msg void OnBatch();
 	afx_msg void OnCCobol();
 	afx_msg void OnCC();

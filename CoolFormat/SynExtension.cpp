@@ -9,6 +9,7 @@ LanguageName CSynExtension::m_LangNames[MAX_SYN_LANG] = {
 	{_T("ASP"),					_T("*.asp;"),																				SYN_ASP},
 	{_T("AutoHotkey"),			_T("*.ahk;*.ia;*.scriptlet;*.hkml;"),														SYN_AUTOHOTKEY},
 	{_T("AutoIt"),				_T("*.au3;"),																				SYN_AUTOIT},
+	{_T("Bash"),				_T("*.sh;"),																				SYN_BASH},
 	{_T("Batch"),				_T("*.bat;*.cmd;*.nt;"),																	SYN_BATCH},
 	{_T("COBOL"),				_T("*.cbl;*.cbd;*.cdb;*.cdc;*.cob;"),														SYN_COBOL},
 	{_T("C++"),					_T("*.h;*.hpp;*.hxx;*.cpp;*.cxx;*.cc;*.c;"),												SYN_CPP},

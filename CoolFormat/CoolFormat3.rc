@@ -63,8 +63,11 @@ END
 // Icon with lowest ID value placed first to ensure application icon
 // remains consistent on all systems.
 IDR_MAINFRAME           ICON                    "res\\CoolFormat3.ico"
+
 IDR_CoolFormat3TYPE     ICON                    "res\\CoolFormat3Doc.ico"
+
 IDI_OUTPUT_BAR_HC       ICON                    "res\\output_bar_hc.ico"
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -72,12 +75,19 @@ IDI_OUTPUT_BAR_HC       ICON                    "res\\output_bar_hc.ico"
 //
 
 IDB_RIBBON_ICONS        BITMAP                  "res\\ribbonicons.bmp"
+
 IDB_RIBBON_FILESMALL    BITMAP                  "res\\ribbonfilesmall.bmp"
+
 IDB_RIBBON_FILELARGE    BITMAP                  "res\\ribbonfilelarge.bmp"
+
 IDB_RIBBON_HOMESMALL    BITMAP                  "res\\ribbonhomesmall.bmp"
+
 IDB_RIBBON_HOMELARGE    BITMAP                  "res\\ribbonhomelarge.bmp"
+
 IDR_MENU_IMAGES         BITMAP                  "res\\menuimages.bmp"
+
 IDB_BITMAP_ABOUT        BITMAP                  "res\\aboutmain.bmp"
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -333,6 +343,7 @@ BEGIN
         MENUITEM "AutoIt",                      ID_A_AUTOIT
     END
     MENUITEM "Batch",                       ID_BATCH
+    MENUITEM "Bash",                        ID_BASH
     POPUP "C"
     BEGIN
         MENUITEM "COBOL",                       ID_C_COBOL
@@ -780,7 +791,9 @@ END
 //
 
 IDB_MENU_IMAGES_HC      PNG                     "res\\menuimages_hc.png"
+
 IDB_OPTIONS             PNG                     "res\\options.png"
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -925,13 +938,21 @@ END
 //
 
 IDR_SETCONFIG_XML_JSON  XML                     "res\\SetConfig\\JSON.xml"
+
 IDR_SETCONFIG_XML_SQL   XML                     "res\\SetConfig\\SQL.xml"
+
 IDR_SETCONFIG_XML_JAVASCRIPT XML                     "res\\SetConfig\\JavaScript.xml"
+
 IDR_SETCONFIG_XML_PHP   XML                     "res\\SetConfig\\PHP.xml"
+
 IDR_SETCONFIG_XML_CPP   XML                     "res\\SetConfig\\Cpp.xml"
+
 IDR_SETCONFIG_XML_HTML  XML                     "res\\SetConfig\\HTML.xml"
+
 IDR_SETCONFIG_XML_CSS   XML                     "res\\SetConfig\\CSS.xml"
+
 IDR_SETCONFIG_XML_VERILOG XML                     "res\\SetConfig\\Verilog.xml"
+
 
 /////////////////////////////////////////////////////////////////////////////
 //

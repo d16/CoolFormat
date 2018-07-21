@@ -51,6 +51,7 @@ BEGIN_MESSAGE_MAP(CSynBCGPEditView, CBCGPEditView)
 	ON_COMMAND(ID_A_ASM, &CSynBCGPEditView::OnAAsm)
 	ON_COMMAND(ID_A_ASP, &CSynBCGPEditView::OnAAsp)
 	ON_COMMAND(ID_BATCH, &CSynBCGPEditView::OnBatch)
+	ON_COMMAND(ID_BASH, &CSynBCGPEditView::OnBash)
 	ON_COMMAND(ID_C_COBOL, &CSynBCGPEditView::OnCCobol)
 	ON_COMMAND(ID_C_C, &CSynBCGPEditView::OnCC)
 	ON_COMMAND(ID_C_C32893, &CSynBCGPEditView::OnCC32893)
@@ -556,6 +557,11 @@ void CSynBCGPEditView::OnBatch()
 {
 	m_pEdit->SelectLanguage(SYN_BATCH);
 	ReSetLangLabel();
+}
+void CSynBCGPEditView::OnBash()
+{
+    m_pEdit->SelectLanguage( SYN_BASH );
+    ReSetLangLabel();
 }
 
 void CSynBCGPEditView::OnCCobol()
