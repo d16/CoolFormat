@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CoolFormat", "CoolFormat\CoolFormat3.vcxproj", "{3ED78A39-F379-4B65-9411-E952B7D87793}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -222,5 +222,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1A460A8C-7D21-447D-8A01-752B873A52A6}
 	EndGlobalSection
 EndGlobal
