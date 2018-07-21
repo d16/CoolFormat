@@ -60,8 +60,8 @@ int CUpdateChecker::CompareVersion(const CString &strVersion1, const CString &st
 		lstVersion2.AddTail(strToken);
 	}
 
-	int nMax = max(lstVersion1.GetCount(), lstVersion2.GetCount());
-	for (int i = 0; i < nMax; ++i)
+    INT_PTR nMax = max(lstVersion1.GetCount(), lstVersion2.GetCount());
+	for ( INT_PTR i = 0; i < nMax; ++i)
 	{
 		int nVer1 = (i < lstVersion1.GetCount()) ? _ttoi(lstVersion1.GetAt(lstVersion1.FindIndex(i))) : 0;
 		int nVer2 = (i < lstVersion2.GetCount()) ? _ttoi(lstVersion2.GetAt(lstVersion2.FindIndex(i))) : 0;

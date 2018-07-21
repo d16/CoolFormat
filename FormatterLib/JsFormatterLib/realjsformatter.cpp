@@ -430,7 +430,7 @@ void RealJSFormatter::Go()
 	EndParse();
 }
 
-void RealJSFormatter::ProcessOper(bool bHaveNewLine, char tokenAFirst, char tokenBFirst)
+void RealJSFormatter::ProcessOper(bool bHaveNewLine, char , char )
 {
 	char topStack;
 	GetStackTop(m_blockStack, topStack);
@@ -825,7 +825,7 @@ void RealJSFormatter::ProcessOper(bool bHaveNewLine, char tokenAFirst, char toke
 	PutToken(m_tokenA, string(" "), string(" ")); // 剩余的操作符都是 空格oper空格
 }
 
-void RealJSFormatter::ProcessString(bool bHaveNewLine, char tokenAFirst, char tokenBFirst)
+void RealJSFormatter::ProcessString(bool bHaveNewLine, char , char )
 {
 	bool bTokenAPropName = false;
 	if(m_tokenPreA.code == ".")

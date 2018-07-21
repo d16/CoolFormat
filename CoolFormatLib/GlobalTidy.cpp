@@ -84,7 +84,7 @@ void GlobalTidy::InitGlobalTidy(const std::string &strDllPath, const std::string
     LoadGlobalTidy(strDllPath, strConfigPath);
 }
 
-bool GlobalTidy::LoadGlobalTidy(const std::string &strDllPath, const std::string &strConfigPath)
+bool GlobalTidy::LoadGlobalTidy(const std::string &, const std::string &)
 {
 #ifdef USE_LOCAL_CONFIG_FILE
     return LoadFromFile(strDllPath, strConfigPath);

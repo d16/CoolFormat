@@ -240,8 +240,8 @@ BOOL CSetEditDlg::PreTranslateMessage(MSG* pMsg)
 		if (pMsg->hwnd == GetDlgItem(IDC_BUTTON_DEFAULTEXT)->GetSafeHwnd())
 		{
 			CString strTemp;
-			BOOL bNameVaild = strTemp.LoadString(IDS_MSG_GODEFAULT);
-			ASSERT(bNameVaild);
+			/*BOOL bNameVaild = */strTemp.LoadString(IDS_MSG_GODEFAULT);
+			//ASSERT(bNameVaild);
 			if (CFMessageBox(strTemp, MB_YESNO | MB_ICONINFORMATION) == IDYES)
 			{
 				m_colorBack.SetColor(GetSysColor (COLOR_WINDOW));

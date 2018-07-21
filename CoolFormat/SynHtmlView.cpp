@@ -131,7 +131,7 @@ void CSynHtmlView::OnFileSave()
 
 		CFile mFile2(lpszPathName, CFile::modeWrite|CFile::modeCreate);
 		CT2A strHtml(m_strHtmlSrc, GetACP());
-		mFile2.Write(strHtml, strlen(strHtml));
+		mFile2.Write(strHtml, ( UINT )strlen(strHtml));
 		mFile2.Flush();
 		mFile2.Close();
 	}
@@ -270,7 +270,7 @@ BOOL CSynHtmlView::CopyHtmlToClip( const CString &strHtml, const CString &strCod
 		"%s\r\n"
 		"<!--EndFragment-->\r\n"
 		"</body></html>",
-		97, 172 + nHtmlSrcLen, 111, 136 + nHtmlSrcLen, pszU8);
+		97, 172 + nHtmlSrcLen, 111, 136 + nHtmlSrcLen, pszU8.m_szBuffer);
 
 	// 3)¼ôÌù°å²Ù×÷
 	static int cfid = 0;

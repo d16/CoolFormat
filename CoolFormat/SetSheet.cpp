@@ -70,8 +70,8 @@ BOOL CSetSheet::PreTranslateMessage(MSG* pMsg)
 		if (pMsg->hwnd == GetDlgItem(IDC_SETSHEET_DEFAULT)->GetSafeHwnd())
 		{
 			CString strTemp;
-			BOOL bNameVaild = strTemp.LoadString(IDS_MSG_GODEFAULTOUT);
-			ASSERT(bNameVaild);
+			/*BOOL bNameVaild =*/ strTemp.LoadString(IDS_MSG_GODEFAULTOUT);
+			//ASSERT(bNameVaild);
 			if (CFMessageBox(strTemp, MB_YESNO | MB_ICONINFORMATION) == IDYES)
 			{
 				g_GlobalTidy.m_TidyCpp = g_GlobalTidy.m_TidyNames[SYN_CPP].tidyName;

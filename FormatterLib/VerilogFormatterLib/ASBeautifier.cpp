@@ -408,7 +408,7 @@ void ASBeautifier::setBlockIndent(bool state)
 *
 * @param   state             state of option.
 */
-void ASBeautifier::setSwitchIndent(bool state)
+void ASBeautifier::setSwitchIndent(bool )
 {
     ;// switchIndent = state;
 }
@@ -419,7 +419,7 @@ void ASBeautifier::setSwitchIndent(bool state)
 *
 * @param   state             state of option.
 */
-void ASBeautifier::setCaseIndent(bool state)
+void ASBeautifier::setCaseIndent(bool )
 {
     ;//caseIndent = state;
 }
@@ -1263,7 +1263,7 @@ int ASBeautifier::getNextProgramCharDistance(const string &line, int i)
             }
             continue;
         }
-        else if (isWhiteSpace(ch))
+        else if (isWhiteSpace((char)ch))
             continue;
         else if (ch == '/')
         {

@@ -388,7 +388,7 @@ void SQLFormatter2::_handleSubQuery(char *&p1, char *&p2, char *&res, int indent
  * Handles the case when the lookahead should be increased !
  */
 
-void SQLFormatter2::_handleIncreaseLookahead(char *&p1, char *&p2, char *&res, int indent, bool &lastWasToken, int &lookahead) {
+void SQLFormatter2::_handleIncreaseLookahead(char *&, char *&p2, char *&res, int indent, bool &lastWasToken, int &lookahead) {
 	lastWasToken;indent;res;
   //cerr << "increasing lookahead...\n";
   //cerr << "in buffer : "; _output(p1, p2, true);
@@ -406,8 +406,6 @@ bool SQLFormatter2::_isSqlToken(const char *start, const char *end) {
   char *sql_tokens[10] = {"SELECT", "INSERT INTO", "FROM", "WHERE", "AND", "OR", "ORDER BY", "GROUP BY", "COALESCE", 0};
   char **tab = sql_tokens;  
   
-  const char *s = &start[0];
-  const char *e = &end[0];    
 
   ////cerr << "checking for token in '"; _output(start, end, false); //cerr << "' ... ";
 
