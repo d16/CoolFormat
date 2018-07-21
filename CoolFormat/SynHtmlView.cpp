@@ -172,7 +172,7 @@ BOOL CSynHtmlView::ShowCodeToHtml( const CString &strHtml, const CString &strCod
 //////////////////////////////////////////////////////////////////////////
 void CSynHtmlView::MakeCodeToHtml( const CString& strCode, const CString &strLang, int iLineCount )
 {
-	m_strHtmlSrc = _T("<!-- CoolFormat Source Formatter http://blog.csdn.net/akof1314 -->");
+	m_strHtmlSrc = _T("");
 
 	// 1)Ìí¼Ó±ß¿ò
 	if (g_GlobalUtils.m_sStyleScheme.m_bHtmlShowBorder)
@@ -256,7 +256,7 @@ BOOL CSynHtmlView::CopyHtmlToClip( const CString &strHtml, const CString &strCod
 {
 	// 1)×ª»»³ÉUTF-8
 	CW2A pszU8(CT2W(strHtml), CP_UTF8);
-	int nHtmlSrcLen = strlen(pszU8);
+	int nHtmlSrcLen = ( int )strlen(pszU8);
 
 	// 2)×é³É¼ôÌù°åÆ¬¶Î
 	CStringA strHtmlClip;

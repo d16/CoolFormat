@@ -106,8 +106,8 @@ int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	ASSERT(bNameValid);
 	bNameValid = strTemp2.LoadString(IDS_STATUS_AUTOR);
 	ASSERT(bNameValid);
-	m_wndStatusBar.AddElement (new CBCGPRibbonStatusBarPane (
-		ID_STATUSBAR_PANE4, strTemp, FALSE), strTemp2);
+	//m_wndStatusBar.AddElement (new CBCGPRibbonStatusBarPane (
+	//	ID_STATUSBAR_PANE4, strTemp, FALSE), strTemp2);
 
 	bNameValid = strTemp.LoadString(IDS_STATUS_ROWCOL);
 	ASSERT(bNameValid);	
@@ -912,16 +912,16 @@ void CMainFrame::OnExportreg()
 		if (reg.ExportReg(dlg.GetPathName()))
 		{
 			CString strTemp;
-			BOOL bNameVaild = strTemp.LoadString(IDS_STRING_CONFIGOUTOK);
-			ASSERT(bNameVaild);
+			/*BOOL bNameVaild =*/ strTemp.LoadString(IDS_STRING_CONFIGOUTOK);
+			//ASSERT(bNameVaild);
 			strTemp.Append(dlg.GetPathName());
 			CFMessageBox(strTemp, MB_OK | MB_ICONINFORMATION);
 		}
 		else
 		{
 			CString strTemp;
-			BOOL bNameVaild = strTemp.LoadString(IDS_STRING_CONFIGOUTFAIL);
-			ASSERT(bNameVaild);
+			/*BOOL bNameVaild =*/ strTemp.LoadString(IDS_STRING_CONFIGOUTFAIL);
+			//ASSERT(bNameVaild);
 			CFMessageBox(strTemp, MB_OK | MB_ICONERROR);
 		}
 	}
@@ -980,15 +980,15 @@ void CMainFrame::OnImportreg()
 		if (reg.ImportReg(dlg.GetPathName()))
 		{
 			CString strTemp;
-			BOOL bNameVaild = strTemp.LoadString(IDS_STRING_CONFIGOK);
-			ASSERT(bNameVaild);
+			/*BOOL bNameVaild =*/ strTemp.LoadString(IDS_STRING_CONFIGOK);
+			//ASSERT(bNameVaild);
 			CFMessageBox(strTemp, MB_OK | MB_ICONINFORMATION);
 		}
 		else
 		{
 			CString strTemp;
-			BOOL bNameVaild = strTemp.LoadString(IDS_STRING_CONFIGFAIL);
-			ASSERT(bNameVaild);
+			/*BOOL bNameVaild =*/ strTemp.LoadString(IDS_STRING_CONFIGFAIL);
+			//ASSERT(bNameVaild);
 			CFMessageBox(strTemp, MB_OK | MB_ICONERROR);
 		}
 	}
@@ -1008,8 +1008,8 @@ void CMainFrame::OnOnlinehelp()
 void CMainFrame::OnSetformatter()
 {
 	CString strTemp;
-	BOOL bNameVaild = strTemp.LoadString(IDS_STRING_SETFORMATTER);
-	ASSERT(bNameVaild);
+	/*BOOL bNameVaild =*/ strTemp.LoadString(IDS_STRING_SETFORMATTER);
+	//ASSERT(bNameVaild);
 	CSetSheet setSheet(strTemp, this, 0);
 	setSheet.DoModalAllPage();	
 }
@@ -1031,8 +1031,8 @@ BOOL CMainFrame::OnCopyData(CWnd* pWnd, COPYDATASTRUCT* pCopyDataStruct)
 		if (!g_GlobalUtils.m_sLanguageExt.IsDocSupport(pszExtension))
 		{
 			CString strTemp;
-			BOOL bNameVaild = strTemp.LoadString(IDS_DOC_UNSUPPORT);
-			ASSERT(bNameVaild);
+			/*BOOL bNameVaild =*/ strTemp.LoadString(IDS_DOC_UNSUPPORT);
+			//ASSERT(bNameVaild);
 			CFMessageBox(strTemp, MB_OK | MB_ICONERROR);
 		}
 		else
